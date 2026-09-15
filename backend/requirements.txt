@@ -1,0 +1,32 @@
+# Live Presence — Python dependencies
+# Core
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+websockets>=13.0
+httpx>=0.27.0
+pydantic>=2.9.0
+pydantic-settings>=2.6.0
+psutil>=6.0.0
+numpy>=1.26.0
+
+# Face
+opencv-python-headless>=4.10.0
+insightface>=0.7.3
+onnxruntime>=1.19.0
+# optional: pyvirtualcam for OBS Virtual Camera output
+pyvirtualcam>=0.12.0
+
+# Voice / audio
+sounddevice>=0.5.0
+soundfile>=0.12.0
+# torch installed separately for Apple Silicon / CUDA — see README
+# torch torchvision
+
+# STT — install one of:
+# mlx-whisper  (Apple Silicon)
+# faster-whisper
+faster-whisper>=1.0.0
+
+# Optional restore / extras
+# gfpgan
+# codeformer
